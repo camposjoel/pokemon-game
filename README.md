@@ -8,6 +8,7 @@ Pokemon guess name
 - Fetch APIs with axios
 - Conditional rendering
 - Events
+- Unit testing (Vitest)
 
 ## Recommended IDE Setup
 

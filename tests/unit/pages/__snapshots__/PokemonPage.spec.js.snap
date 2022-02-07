@@ -1,0 +1,12 @@
+// Vitest Snapshot v1
+
+exports[`PokemonPage Component > Should match with snapshot 1`] = `"<h1 data-v-f44bbbe4=\\"\\">Espere por favor</h1>"`;
+
+exports[`PokemonPage Component > Should match with snapshot when pokemons are loaded 1`] = `
+"<div data-v-f44bbbe4=\\"\\">
+  <h1 data-v-f44bbbe4=\\"\\">¿Quién es este pokemon?</h1>
+  <pokemon-picture-stub pokemonid=\\"1\\" showpokemon=\\"false\\" data-v-f44bbbe4=\\"\\"></pokemon-picture-stub>
+  <pokemon-options-stub pokemons=\\"[object Object],[object Object],[object Object],[object Object]\\" data-v-f44bbbe4=\\"\\"></pokemon-options-stub>
+  <!--v-if-->
+</div>"
+`;
