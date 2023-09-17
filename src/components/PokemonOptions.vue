@@ -24,13 +24,15 @@ export default {
 <style scoped>
 ul {
   list-style-type: none;
+  display: flex;
 }
 li {
-  background-color: powderblue;
+  background-color: lightsalmon;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  margin-bottom: 10px;
+  margin: 15px 10px 0;
+  padding: 10px 0;
   width: 250px;
   height: 32px;
   display: flex;

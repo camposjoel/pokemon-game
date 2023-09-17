@@ -13,10 +13,12 @@
     />
 
     <template v-if="showAnswer">
-      <h2 class="fade-in">{{message}}</h2>
-      <button @click="newGame" class="newGameButton">
-        Nuevo Juego
-      </button>
+      <div class="newGameContainer">
+        <h2 class="fade-in">{{message}}</h2>
+        <button @click="newGame" class="newGameButton">
+          Nuevo Juego
+        </button>
+      </div>
     </template>
   </div>
 </template>
@@ -72,15 +74,34 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  font-size: 3rem;
+}
+
+.newGameContainer {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .newGameButton {
   border: none;
   height: 40px;
   width: 140px;
-  background-color: limegreen;
+  background-color: lightgreen;
+  color: #2c3e50;
+  font-family: 'Josefin Sans';
   border-radius: 8px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.newGameButton:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 </style>

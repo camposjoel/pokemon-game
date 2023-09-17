@@ -4,3 +4,5 @@ dist
 dist-ssr
 *.local
 .vscode
+tests/unit/components/__snapshots__
+tests/unit/pages/__snapshots__
