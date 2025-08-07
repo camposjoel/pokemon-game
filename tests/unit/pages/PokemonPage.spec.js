@@ -1,5 +1,5 @@
 // @vitest-environment happy-dom
-import { describe, expect, test, beforeEach, spyOn } from "vitest"
+import { describe, expect, test, beforeEach, vi } from "vitest"
 import { mount, shallowMount } from '@vue/test-utils'
 import PokemonPage from '@/pages/PokemonPage.vue'
 import { pokemons } from '../mocks/pokemons.mock'
@@ -16,7 +16,7 @@ describe('PokemonPage Component', () => {
   })
 
   test('Should call mixPokemonList in mount', () => {
-    const mixPokemonArraySpy = spyOn(PokemonPage.methods, 'mixPokemonList')
+    const mixPokemonArraySpy = vi.spyOn(PokemonPage.methods, 'mixPokemonList')
     shallowMount(PokemonPage)
     expect(mixPokemonArraySpy).toHaveBeenCalled()
   })
